@@ -1,35 +1,39 @@
-# Doomsday Clock for macOS
+# Doomsday Clock
 
-Countdown transparan untuk wallpaper Mac, terinspirasi dari Doomsday Clock. Judul dan angka memakai Avenir Next Bold berwarna putih. Angka berukuran 70% dari tinggi judul, dan seluruh teks ditempatkan di atas Dock.
+Hitung mundur Avengers: Doomsday langsung di atas wallpaper Mac atau PC Windows kamu. Aktifkan widget mengambang kalau ingin countdown tetap terlihat saat membuka aplikasi lain.
 
-![Pratinjau countdown](preview.png)
+Target awalnya **16 Desember 2026 pukul 00.00 WITA (UTC+8)**. Tanggal dan jam bisa diubah lewat menu **DOOM**.
+
+![Pratinjau Doomsday Clock di macOS](preview.png)
 
 ## Pemasangan
 
-1. Unduh **Doomsday-Clock-macOS.zip** dari [rilis terbaru](https://github.com/pterprkrr/doomsday-clock-macos/releases/latest).
-2. Ekstrak ZIP, pindahkan **Doomsday Clock.app** ke **Applications**, lalu buka.
-3. Tampilkan desktop untuk melihat countdown. Gunakan menu **DOOM** di menu bar untuk mengatur tampilan.
+Pilih ZIP yang sesuai dari [halaman unduhan](https://github.com/pterprkrr/doomsday-clock-macos/releases/latest), lalu ekstrak.
 
-Aplikasi menargetkan macOS 14 (Sonoma) atau lebih baru. ZIP berisi aplikasi universal untuk Apple Silicon dan Intel. Build ini ditandatangani secara ad hoc dan belum dinotariskan Apple. Jika macOS menahan aplikasi saat pertama dibuka, lihat [panduan Apple untuk membuka aplikasi](https://support.apple.com/102445) atau buat aplikasinya dari kode sumber dengan langkah di bawah.
+| Perangkat | Pilih file |
+| --- | --- |
+| Mac Apple Silicon atau Intel dengan macOS 14 Sonoma ke atas | `Doomsday-Clock-macOS.zip` |
+| PC Windows 10 atau 11 dengan prosesor Intel atau AMD 64-bit | `Doomsday-Clock-Windows-x64.zip` |
+| PC Windows 10 atau 11 berbasis ARM | `Doomsday-Clock-Windows-arm64.zip` |
+
+- **Mac** · Pindahkan **Doomsday Clock.app** ke Applications dan buka. Menu **DOOM** ada di menu bar atas. Jika macOS menahan aplikasi yang belum dinotariskan, ikuti [panduan Apple](https://support.apple.com/102445).
+- **Windows** · Buka **Doomsday Clock.exe**. Ikon **DOOM** ada di dekat jam taskbar, kadang di balik panah **^**. Versi awal Windows menargetkan Windows 10 versi 1809 ke atas. Build belum ditandatangani digital, dan integrasi dengan desktop masih perlu diuji langsung.
 
 ## Penggunaan
 
-- **Wallpaper desktop** menampilkan atau menyembunyikan countdown di atas wallpaper desktop utama.
-- **Widget mengambang** membuka countdown yang bisa diseret ke posisi lain.
-- **Pratinjau besar** membuka jendela yang bisa ditampilkan layar penuh.
-- **Ubah tanggal countdown** mengatur tanggal dan jam dalam WITA (UTC+8). Target bawaan adalah **16 Desember 2026 pukul 00.00 WITA**.
+Tampilkan desktop untuk melihat countdown di atas wallpaper yang sedang kamu pakai. Dari menu **DOOM**, kamu bisa menyalakan widget mengambang, membuka pratinjau besar, atau mengganti tanggal dan jam. Di Windows, seret tulisan widget untuk memindahkannya.
 
-Untuk menjalankan aplikasi saat masuk ke Mac, tambahkan **Doomsday Clock.app** melalui **System Settings → General → Login Items & Extensions → Open at Login**.
+Judul dan angka berwarna putih. Tinggi angka 70% dari tinggi judul. Mac memakai Avenir Next Bold. Windows memakai font yang sama jika tersedia, atau Segoe UI Bold.
 
 ## Build dari kode sumber
 
-Siapkan Xcode atau Command Line Tools. Unduh kode sumber lewat **Code → Download ZIP**, ekstrak, lalu jalankan dari folder hasil ekstrak.
+**macOS** · Siapkan Xcode atau Command Line Tools, lalu jalankan dari folder utama repositori.
 
 ```sh
 bash build.sh
 open 'dist/Doomsday Clock.app'
 ```
 
-Skrip membuat aplikasi dan ZIP di folder `dist`, lalu memeriksa tanda tangan dan hitungan waktu. Countdown berjalan lokal dan menampilkan bulan kalender, hari, jam, menit, dan detik.
+**Windows** · Kode sumber ada di [folder windows](windows/). Panduan build dengan Visual Studio atau Zig ada di [README Windows](windows/README.md).
 
-Doomsday Clock adalah proyek dari https://x.com/pterprkrr. [Referensi konsep dari Marvel Entertainment](https://www.youtube.com/watch?v=f17J3AXVK5w)
+Proyek penggemar dari [pterprkrr](https://x.com/pterprkrr), terinspirasi [livestream Marvel Entertainment](https://www.youtube.com/watch?v=f17J3AXVK5w).
