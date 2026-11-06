@@ -1,0 +1,28 @@
+name: Build Windows
+on:
+  push:
+    paths: ["windows/**", ".github/workflows/build-windows.yml"]
+  pull_request:
+    paths: ["windows/**", ".github/workflows/build-windows.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows-x64:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and test
+        working-directory: windows
+        shell: pwsh
+        run: |
+          $vswhere = "${env:ProgramFiles(x86)}/Microsoft Visual Studio/Installer/vswhere.exe"
+          $installation = & $vswhere -latest -products '*' -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
+          if (-not $installation) { throw 'Visual C++ Build Tools not found.' }
+          & "$installation/Common7/Tools/Launch-VsDevShell.ps1" -Arch amd64 -HostArch amd64 -SkipAutomaticLocation
+          ./build.ps1 -Architecture x64
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Doomsday-Clock-Windows-x64
+          path: windows/dist/*.zip
+          if-no-files-found: error
