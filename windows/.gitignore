@@ -1,0 +1,8 @@
+build/
+dist/
+.zig-cache/
+*.obj
+*.res
+*.pdb
+*.ilk
+.DS_Store

@@ -1,0 +1,27 @@
+DOOMSDAY CLOCK UNTUK WINDOWS
+
+1. Ekstrak seluruh isi ZIP ke folder pilihanmu.
+2. Buka "Doomsday Clock.exe". Tidak perlu instalasi tambahan.
+3. Tampilkan desktop untuk melihat countdown di atas wallpaper kamu.
+4. Klik ikon jam DOOM di dekat jam taskbar untuk membuka pengaturan.
+   Kalau ikonnya tidak terlihat, buka menu ikon tersembunyi (^).
+
+Aktifkan "Widget mengambang" kalau ingin countdown tetap terlihat saat
+membuka aplikasi lain. Seret tulisannya untuk memindahkan widget.
+
+Target awal: 16 Desember 2026 pukul 00.00 WITA (UTC+8).
+Ubah tanggal lewat menu DOOM. Pengaturan tersimpan saat aplikasi ditutup.
+
+Judul dan angka berwarna putih. Tinggi angka 70% dari tinggi judul.
+Avenir Next Bold dipakai jika terpasang di Windows kamu. Jika tidak ada,
+aplikasi memakai Segoe UI Bold. Font Avenir tidak disertakan dalam ZIP.
+
+Pilih ZIP x64 untuk komputer Intel atau AMD 64-bit.
+Pilih ZIP ARM64 untuk Windows berbasis ARM, misalnya Snapdragon.
+Target sistem: Windows 10 versi 1809 atau lebih baru, termasuk Windows 11.
+
+Build awal ini belum ditandatangani digital. File .exe dibuat dari Mac;
+hitungan waktu sudah diuji, tetapi tampilan dan integrasi desktop masih
+perlu diuji langsung di Windows. Detail dan kode sumber ada di README.
+
+Doomsday Clock adalah proyek penggemar.
