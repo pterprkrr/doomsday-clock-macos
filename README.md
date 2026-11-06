@@ -32,4 +32,4 @@ open 'dist/Doomsday Clock.app'
 
 Skrip membuat aplikasi dan ZIP di folder `dist`, lalu memeriksa tanda tangan dan hitungan waktu. Countdown berjalan lokal dan menampilkan bulan kalender, hari, jam, menit, dan detik.
 
-Doomsday Clock adalah proyek dari X.com/pterprkrr. [Referensi konsep dari Marvel Entertainment](https://www.youtube.com/watch?v=f17J3AXVK5w)
+Doomsday Clock adalah proyek dari https://x.com/pterprkrr. [Referensi konsep dari Marvel Entertainment](https://www.youtube.com/watch?v=f17J3AXVK5w)
